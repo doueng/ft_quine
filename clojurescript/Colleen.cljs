@@ -1,9 +1,12 @@
 (defn rofl [])
-(defn main []
+;; hello
+(defn -main []
   (let [r "(defn rofl [])
-(defn main []
+;; hello
+(defn -main []
   (let [r 5]
     (rofl)
+    ;; hi
     (print
      (clojure.string.replace-first
       r
@@ -12,9 +15,10 @@
              (char 34)
              r
              (char 34))))))
-(main)
+(-main)
 "]
     (rofl)
+    ;; hi
     (print
      (clojure.string.replace-first
       r
@@ -23,4 +27,4 @@
              (char 34)
              r
              (char 34))))))
-(main)
+(-main)
