@@ -1,11 +1,11 @@
-FLAGS = -Werror -Wextra -Wall
+FLAGS = -Werror -Wextra -Wall -g
 # SRC = Colleen.c \
 # 		Grace.c \
 # 		Sully.c
 
 # SRCO = $(SRC:.c=.o)
 
-all: Colleen
+all: Colleen Grace
 # Grace Sully
 
 Colleen:
@@ -26,7 +26,8 @@ clean:
 	/bin/rm -f Sully.o
 
 fclean: clean
-	/bin/rm -f Grace_kid.c
+	/bin/rm -f Grace_kid.s
+	/bin/rm -rf *.dSYM
 	/bin/rm -f a.out
 	/bin/rm -f Sully_*
 	/bin/rm -f Sully
