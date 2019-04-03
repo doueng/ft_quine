@@ -5,8 +5,7 @@ FLAGS = -Werror -Wextra -Wall -g
 
 # SRCO = $(SRC:.c=.o)
 
-all: Colleen Grace
-# Grace Sully
+all: Colleen Grace Sully
 
 Colleen:
 	nasm -fmacho64 Colleen.s
@@ -26,6 +25,7 @@ clean:
 	/bin/rm -f Sully.o
 
 fclean: clean
+	/bin/rm -f test.s
 	/bin/rm -f Grace_kid.s
 	/bin/rm -rf *.dSYM
 	/bin/rm -f a.out
