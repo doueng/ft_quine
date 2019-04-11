@@ -1,9 +1,4 @@
 FLAGS = -Werror -Wextra -Wall -g
-# SRC = Colleen.c \
-# 		Grace.c \
-# 		Sully.c
-
-# SRCO = $(SRC:.c=.o)
 
 all: Colleen Grace Sully
 
