@@ -2,16 +2,22 @@ FLAGS = -Werror -Wextra -Wall
 
 all: Colleen Grace Sully
 
-Colleen:
+Colleen.o: Colleen.s
 	nasm -fmacho64 Colleen.s
+
+Colleen: Colleen.o
 	gcc $(FLAGS) Colleen.o -o Colleen
 
-Grace:
+Grace.o: Grace.s
 	nasm -fmacho64 Grace.s
+
+Grace: Grace.o
 	gcc $(FLAGS) Grace.o -o Grace
 
-Sully:
+Sully.o: Sully.s
 	nasm -fmacho64 Sully.s
+
+Sully: Sully.o
 	gcc $(FLAGS) Sully.o -o Sully
 
 clean:
