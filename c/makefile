@@ -1,19 +1,14 @@
 FLAGS = -Werror -Wextra -Wall
-# SRC = Colleen.c \
-# 		Grace.c \
-# 		Sully.c
-
-# SRCO = $(SRC:.c=.o)
 
 all: Colleen Grace Sully
 
-Colleen:
+Colleen: Colleen.o
 	gcc $(FLAGS) Colleen.c -o Colleen
 
-Grace:
+Grace: Grace.o
 	gcc $(FLAGS) Grace.c -o Grace
 
-Sully:
+Sully: Sully.o
 	gcc $(FLAGS) Sully.c -o Sully
 
 clean:
@@ -30,4 +25,4 @@ fclean: clean
 	/bin/rm -f Grace
 	/bin/rm -f tmp/*
 
-re: fclean all Colleen Grace Sully
+re: fclean all

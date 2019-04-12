@@ -1,4 +1,4 @@
-FLAGS = -Werror -Wextra -Wall -g
+FLAGS = -Werror -Wextra -Wall
 
 all: Colleen Grace Sully
 
