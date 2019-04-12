@@ -1,9 +1,7 @@
-(ns colleen.Colleen)
 (defn rofl [])
 ;; hello
 (defn -main []
-  (let [r "(ns colleen.Colleen)
-(defn rofl [])
+  (let [r "(defn rofl [])
 ;; hello
 (defn -main []
   (let [r 5]
@@ -17,6 +15,7 @@
              (char 34)
              r
              (char 34))))))
+(-main)
 "]
     (rofl)
     ;; hi
@@ -28,3 +27,4 @@
              (char 34)
              r
              (char 34))))))
+(-main)
