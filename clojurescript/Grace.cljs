@@ -3,7 +3,7 @@
 (def s "(require 'fs)
 ;; comment
 (def s 686)
-(def MAIN (fs/writeFileSync 6Grace_kid.cljs6
+(def FT (fs/writeFileSync 6Grace_kid.cljs6
                   (reduce
                    #(str %1
                        (cond
@@ -12,9 +12,9 @@
                          :else %2))
                    (str)
                    s)))
-MAIN
+FT
 ")
-(def MAIN (fs/writeFileSync "Grace_kid.cljs"
+(def FT (fs/writeFileSync "Grace_kid.cljs"
                   (reduce
                    #(str %1
                        (cond
@@ -23,4 +23,4 @@ MAIN
                          :else %2))
                    (str)
                    s)))
-MAIN
+FT
