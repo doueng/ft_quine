@@ -1,9 +1,9 @@
 (defn rofl [])
 ;; hello
-(defn -main []
+(defn main []
   (let [r "(defn rofl [])
 ;; hello
-(defn -main []
+(defn main []
   (let [r 5]
     (rofl)
     ;; hi
@@ -15,7 +15,7 @@
              (char 34)
              r
              (char 34))))))
-(-main)
+(main)
 "]
     (rofl)
     ;; hi
@@ -27,4 +27,4 @@
              (char 34)
              r
              (char 34))))))
-(-main)
+(main)
