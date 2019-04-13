@@ -1,7 +1,7 @@
 (require 'fs)
-
+;; comment
 (def s "(require 'fs)
-
+;; comment
 (def s 686)
 (def MAIN (fs/writeFileSync 6Grace_kid.cljs6
                   (reduce
