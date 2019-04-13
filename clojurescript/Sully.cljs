@@ -24,7 +24,6 @@
                                 :else %2))
                           (str)
                           s)))
-
 (and (> i 0)
      (do
        (write_to_file new_filename)
