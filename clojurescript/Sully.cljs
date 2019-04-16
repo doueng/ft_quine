@@ -9,7 +9,11 @@
          (reverse
           (take-while #(not= %1 (char (+ 45 2))) (reverse js/__filename)))))
 (def i 7)
-(def n (- i (if (not= curr_filename 6Sully.cljs6) 1 0)))
+(def n (- i
+          (if (not=
+               (apply str (drop-while #(not= %1 (char (+ 42 41))) curr_filename)) 6Sully.cljs6)
+            1
+            0)))
 (def new_filename (str 6Sully_6 n 6.cljs6))
 (def new_bin (str 6Sully_6 n))
 
@@ -36,7 +40,11 @@
          (reverse
           (take-while #(not= %1 (char (+ 45 2))) (reverse js/__filename)))))
 (def i 5)
-(def n (- i (if (not= curr_filename "Sully.cljs") 1 0)))
+(def n (- i
+          (if (not=
+               (apply str (drop-while #(not= %1 (char (+ 42 41))) curr_filename)) "Sully.cljs")
+            1
+            0)))
 (def new_filename (str "Sully_" n ".cljs"))
 (def new_bin (str "Sully_" n))
 
