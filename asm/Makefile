@@ -26,15 +26,10 @@ clean:
 	/bin/rm -f Sully.o
 
 fclean: clean
-	/bin/rm -f test.s
 	/bin/rm -f Grace_kid.s
-	/bin/rm -rf *.dSYM
-	/bin/rm -f a.out
-	/bin/rm -f Sully_*
 	/bin/rm -f Sully
 	/bin/rm -f Colleen
 	/bin/rm -f Grace
-	/bin/rm -f tmp/*
 
 re: fclean all
 
